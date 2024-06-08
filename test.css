@@ -61,7 +61,8 @@ nav ul li a:hover {
 nav{
   width: 560px;
   height: 50px;
-  background: #222;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.9);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -315,7 +316,8 @@ img{
   padding: 20px;
   display: flex;
   align-items: center;
-  background: #333;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.9);
   margin-bottom: 20px;
   border-radius: 8px;
 }
@@ -431,7 +433,7 @@ background: linear-gradient(to right, #C83333 0%, #CF1512 100%);
 }
 
 .contactForm::after {
-  box-shadow: 13px 13px 20px 0px rgb(182, 65, 65);
+  box-shadow: 0 4px 30px rgb(51 11 11 / 90%);
   content: '';
   position: absolute;
   inset: 2px;
