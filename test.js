@@ -523,3 +523,47 @@ var VanillaTilt = (function () {
     return VanillaTilt;
     
     }());
+
+
+// let animates = document.querySelectorAll('.animate');
+// function scrollTrigger(){
+//   animates.forEach(anim => {
+//     if(anim.offsetTop < window.scrollY){
+//       anim.classList.add('active')
+//     }
+//     else{
+//       anim.classList.remove('active')
+//     }
+//   })
+// }
+// window.addEventListener('scroll',scrollTrigger);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sr = ScrollReveal({
+    distance: "50px",
+    duration: 2000,
+    reset: true,
+  });
+
+  sr.reveal(".animate", { delay: 200, origin: "left" });
+
+  const contactLink = document.getElementById("contact-link");
+  contactLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("Contact_US").scrollIntoView({ behavior: "smooth" });
+  });
+
+  const contactForm = document.getElementById("contactForm");
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
+    console.log("Form submitted with data:", Object.fromEntries(formData.entries()));
+  });
+
+  // VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+  //   max: 25,
+  //   speed: 400,
+  //   glare: true,
+  //   "max-glare": 1,
+  // });
+});
