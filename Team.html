@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="content">
-        <h1 class="heading">Team</h1>
-        <div class="main">
+        <h1 class="reveal" class="heading">Team</h1>
+        <div class="main reveal">
             <div class="first">
                 <div class="image">
                     <img src="augatine paul.jpg" alt="CEO_and_CTO">
@@ -60,4 +60,15 @@
     </div>
 </body>
 <script src="Team.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    const reveal = {
+      origin : 'left',
+      delay    : 800,
+      distance : '120px',
+      easing   : 'ease-in-out',
+    };
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal');
+</script>
 </html>

@@ -8,6 +8,7 @@ body{
     background-position: center; /* Centers the image */
     background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
     font-family: 'poppins';
+    height: 100vh; 
 }
 
 .heading{
@@ -15,6 +16,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* height: 100vh; */
+    text-align: center;
 }
 
 .designation,
@@ -26,7 +29,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 90px;
+    /* margin: 90px; */
+    /* height: 100vh; */
 }
 
 img{
@@ -71,4 +75,22 @@ img{
   background-position: right center; /* change the direction of the change here */
   color: #ffffff;
   text-decoration: none;
+}
+
+/* .content{
+    height: 100vh;
+} */
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+}
+
+h1.reveal{
+    text-align: center;
 }
