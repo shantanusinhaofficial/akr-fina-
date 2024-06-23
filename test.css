@@ -177,7 +177,7 @@ main {
   height: 900px; */
 }
 
-.video_text{
+/* .video_text{
   position: absolute;
   top: 0;
   left: 0;
@@ -190,7 +190,21 @@ main {
   justify-content: center;
   font-weight: 900;
   mix-blend-mode: screen;
+} */
+
+
+.video_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  font-size: 3rem;
+  font-weight: bold;
 }
+
 
 .On-video-text{
   font-size: 50px;
@@ -818,4 +832,43 @@ nav ul li a {
   /* margin: 5px 0px 0px 0px;
   padding: 10px;
   border-radius: 20px; */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  header {
+      flex-direction: column;
+      padding: 20px 5%;
+  }
+
+  .nav_links {
+      padding: 10px 0;
+  }
+
+  .nav_links li {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .main-text {
+      padding: 10px;
+  }
+
+  .main-text h1 {
+      font-size: 24px;
+  }
+
+  .main-text p, .main-text h3 {
+      font-size: 18px;
+  }
+
+  .video_text {
+      font-size: 1.5rem; /* Adjust font size for mobile */
+      padding: 10px; /* Optional: Add padding for better readability */
+  }
+
+  .On-video-text {
+      font-size: 1.5rem;
+  }
 }
