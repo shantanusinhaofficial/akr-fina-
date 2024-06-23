@@ -730,3 +730,92 @@ nav ul li a {
 /* nav ul li a:hover {
   color: black;
 } */
+
+.main-text {
+  padding: 20px;
+}
+
+.main-text h1, .main-text p, .main-text h3 {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  header {
+      flex-direction: column;
+      padding: 20px 5%;
+  }
+
+  .nav_links {
+      padding: 10px 0;
+  }
+
+  .nav_links li {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .main-text {
+      padding: 10px;
+  }
+
+  .main-text h1 {
+      font-size: 24px;
+  }
+
+  .main-text p, .main-text h3 {
+      font-size: 18px;
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  header {
+      flex-direction: column;
+      padding: 20px 5%;
+  }
+
+  .nav_links {
+      padding: 10px 0;
+  }
+
+  .nav_links li {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .main-text {
+      padding: 10px;
+  }
+
+  .main-text h1 {
+      font-size: 24px;
+  }
+
+  .main-text p, .main-text h3 {
+      font-size: 18px;
+  }
+
+  .video_text {
+      top: 40%; /* Adjust this as necessary for best visual appearance */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      padding: 10px;
+  }
+
+  .On-video-text {
+      font-size: 1.5rem;
+      padding: 10px;
+  }
+}
+
+.navbar{
+  background: rgb(237,237,237, .1);
+  backdrop-filter: blur(10px);
+  /* margin: 5px 0px 0px 0px;
+  padding: 10px;
+  border-radius: 20px; */
+}
