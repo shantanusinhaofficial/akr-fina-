@@ -203,6 +203,7 @@ main {
   z-index: 10;
   font-size: 3rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 
@@ -753,85 +754,35 @@ nav ul li a {
   margin: 10px 0;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-  header {
-      flex-direction: column;
-      padding: 20px 5%;
-  }
-
-  .nav_links {
-      padding: 10px 0;
-  }
-
-  .nav_links li {
-      display: block;
-      padding: 10px 0;
-      text-align: center;
-  }
-
-  .main-text {
-      padding: 10px;
-  }
-
-  .main-text h1 {
-      font-size: 24px;
-  }
-
-  .main-text p, .main-text h3 {
-      font-size: 18px;
-  }
+.videoContainer {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-  header {
-      flex-direction: column;
-      padding: 20px 5%;
-  }
-
-  .nav_links {
-      padding: 10px 0;
-  }
-
-  .nav_links li {
-      display: block;
-      padding: 10px 0;
-      text-align: center;
-  }
-
-  .main-text {
-      padding: 10px;
-  }
-
-  .main-text h1 {
-      font-size: 24px;
-  }
-
-  .main-text p, .main-text h3 {
-      font-size: 18px;
-  }
-
-  .video_text {
-      top: 40%; /* Adjust this as necessary for best visual appearance */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1.5rem;
-      padding: 10px;
-  }
-
-  .On-video-text {
-      font-size: 1.5rem;
-      padding: 10px;
-  }
+.videoSize {
+  width: 100%;
+  height: auto;
 }
 
-.navbar{
-  background: rgb(237,237,237, .1);
-  backdrop-filter: blur(10px);
-  /* margin: 5px 0px 0px 0px;
-  padding: 10px;
-  border-radius: 20px; */
+.video_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap; /* Ensure the text stays in one line */
+}
+
+.main-text {
+  padding: 20px;
+}
+
+.main-text h1, .main-text p, .main-text h3 {
+  margin: 10px 0;
 }
 
 /* Responsive Design */
@@ -869,6 +820,76 @@ nav ul li a {
   }
 
   .On-video-text {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+  }
+
+  .contactInfo .box {
+    min-width: 100%; /* Ensure boxes take full width on small screens */
+    font-size: 20px;
+}
+
+.contactInfo .box .text {
+    font-size: 15px; /* Adjust font size for readability on small screens */
+}
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav_links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .cta {
+      margin-top: 10px;
+  }
+
+  .video_text {
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  .main-text, .contact {
+      padding: 15px;
+  }
+
+  .contact .container {
+      flex-direction: column;
+  }
+
+  .contactInfo, .contactForm {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav_links li {
+      margin-bottom: 10px;
+  }
+
+  .video_text {
+      font-size: 14px;
+      padding: 5px;
+  }
+
+  .main-text, .contact {
+      padding: 10px;
+  }
+
+  .contact .container {
+      flex-direction: column;
+  }
+
+  .contactInfo, .contactForm {
+      width: 100%;
+      margin-bottom: 10px;
   }
 }
