@@ -105,6 +105,7 @@ header {
     width: 70px;
     height: 80px;
     cursor: pointer;
+    border-radius: 0;
 }
 
 .nav_links {
