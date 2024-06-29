@@ -17,3 +17,124 @@ body{
 .para{
     margin: 5px 50px 5px 50px;
 }
+
+@media (max-width: 480px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 204vh;
+    }
+    .vertical{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 414px) {
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 165vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 210vh;
+    }
+}
+
+@media (max-width: 344px) {
+    .content3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 160vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .content4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 150vh;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+    padding: 30px 10%;
+    flex-direction: row;
+}
+
+.logo{
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .nav_links{
+    list-style: none;
+  }
+  
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav_links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav_links li a:hover{
+    color: #000000;
+    background-color: #870f0f;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+  }
+  
+  button{
+    padding: 9px 25px;
+    /* background-color: #a10404; */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #000;
+  }
+  
+  button:hover{
+    background-color: #a10404;
+  }
+
+  .logo {
+    width: 70px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+}
