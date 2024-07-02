@@ -18,6 +18,8 @@ body{
     justify-content: center;
     /* height: 100vh; */
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .designation,

@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(179deg, rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9%);
+    /* background-image: linear-gradient(179deg, rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9%); */
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     margin: 0;
@@ -12,6 +12,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* z-index: -1; */
 }
 
 .heading {
@@ -85,6 +96,8 @@ img {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 
 h1.reveal {
@@ -99,6 +112,8 @@ header {
     padding: 30px 10%;
     width: 100%;
     max-width: 1200px;
+    position: relative;
+    z-index: 2;
 }
 
 .logo {
