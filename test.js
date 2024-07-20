@@ -549,8 +549,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const contactLink = document.getElementById("contact-link");
   contactLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    document.getElementById("Contact_US").scrollIntoView({ behavior: "smooth" });
+    // event.preventDefault();
+    // // document.getElementById("Contact_US").scrollIntoView({ behavior: "smooth" });
+    // document.querySelector('#Contact_US').scrollIntoView({
+    //   behavior: 'smooth'
+    // });
   });
 
   const contactForm = document.getElementById("contactForm");
