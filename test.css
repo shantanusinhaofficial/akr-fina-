@@ -1061,3 +1061,21 @@ nav ul li a {
 .foot-h{
   display: flex;
 }
+
+/*responsive for the body for mobile view*/
+@media (max-width : 480px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #ffffff);
+    color: white;
+    background-color: #000000;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+}
+}

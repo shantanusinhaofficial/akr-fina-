@@ -16,6 +16,19 @@ body {
     z-index: 2;
 }
 
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.main {
+    gap: 20px; /* Adjust gap to prevent overflow */
+}
+
+.footer-col {
+    width: calc(25% - 30px); /* Adjust width to account for margins */
+}
+
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -305,5 +318,22 @@ button:hover {
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .footer-col {
+        width: 100%; /* Full width on small screens */
     }
 }
