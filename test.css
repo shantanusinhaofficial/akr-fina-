@@ -178,14 +178,16 @@ nav span {
 }
 
 
+
 main {
+  margin-top: 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 200px;
 }
 
 .videoContainer {
@@ -239,7 +241,7 @@ main {
 
 .main-text {
   /* font-style: s; */
-  margin: 60px 0px 60px 0px;
+  margin: 0px 0px 60px 0px;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -786,7 +788,8 @@ nav ul li a {
 
 .videoContainer {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  
 }
 
 .videoSize {
@@ -799,17 +802,18 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   z-index: 10;
-  font-size: 3rem;
-  font-weight: bold;
+  /* font-size: 3rem; */
+  /* font-weight: bold; */
   white-space: nowrap;
   /* Ensure the text stays in one line */
 }
 
 .main-text {
   padding: 20px;
+  /* margin: 0; */
 }
 
 .main-text h1,
@@ -839,9 +843,9 @@ nav ul li a {
     padding: 10px;
   }
 
-  .main-text h1 {
+  /* .main-text h1 {
     font-size: 24px;
-  }
+  } */
 
   .main-text p,
   .main-text h3 {
@@ -885,7 +889,7 @@ nav ul li a {
   }
 
   .video_text {
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
   }
 
@@ -1079,3 +1083,35 @@ nav ul li a {
     align-items: stretch;
 }
 }
+
+/* for animated text */
+.animated-text{
+  position: relative;
+  font-size: 5vw;
+  color: #25283900;
+  -webkit-text-stroke: 0.2vw ;
+}
+
+.animated-text::before{
+  content: attr(data-text);
+  position: absolute;
+  color: #f8f8f8;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 9px solid #000000;
+  overflow: hidden;
+  animation: animates 6s linear infinite;
+}
+
+@keyframes animates{
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+/**/
